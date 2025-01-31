@@ -95,7 +95,6 @@ def player_movement(print_playing_field, arr, rows, column):
                 print('You lost')
                 return 0
             arr[rows][column] = '\033[31m*\033[0m'
-            #print_playing_field(arr, сheck_rows, check_column)
             pF.print_playing_field(arr, сheck_rows, check_column)
         if move == 'q':
             arr[rows][column] = 1
