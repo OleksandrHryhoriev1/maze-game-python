@@ -111,36 +111,3 @@ def player_movement(print_playing_field, arr, rows, column):
                 return 0
             arr[rows][column] = '\033[31m*\033[0m'
             pF.print_playing_field(arr, сheck_rows, check_column)
-# def input_matrix(arr, rows, column, chance):
-#
-#     array_size = rows * column
-#
-#     count_0 = int(array_size * (chance / 100))
-#
-#     count_1 = array_size - count_0
-#
-#     generated_array = [0] * math.floor(count_0) + [1] * math.floor(count_1)
-#     print(generated_array)
-#
-#     random.shuffle(generated_array)
-#     counter = 0
-#
-#     for i in range(rows):
-#         for j in range(column):
-#             arr[i][j] = generated_array[counter]
-#             counter += 1
-#
-#     return arr
-
-# def print_playing_field(arr, rows, column):
-#     print()
-#
-#     for i in range(rows):
-#         for j in range(column):
-#             print(arr[i][j], end=' ')
-#         print()
-#     # Зміна кольору тексту на червоний
-#     print("\033[31mЦей текст червоний.\033[0m")
-#
-#     # Зміна кольору тексту на жовтий
-#     print("\033[33mЦей текст жовтий.\033[0m")
